@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <div align="center">
+      <h1>ระบบตรวจสอบผลการศึกษา <br><h2>กระบวนวิชา CPE3243 วิศวกรรมซอฟต์แวร์</h2></h1>
+      <label>รหัสนักศึกษา :</label>  <input type="text" id="idStudent"><br><br>
+      <input type="text" id="search" style="width: 40%;">
+    </div>
+    <script>
+      document.getElementById("idStudent").addEventListener("input", findCode);
+      function findCode()
+      {
+        var code = document.getElementById("idStudent").value;
+        if(code.length === 10)
+        {
+          google.script.run.withSuccessHandler(updateData).getCode(code);
+        }
+      }
+      function updateData(data)
+      {
+        document.getElementById("search").value = data;
+        M.updateTexfields();
+      }
+    </script>
+  </body>
+</html>
