@@ -1,0 +1,5 @@
+servlet/ConvertCurrencyServlet.class
+com/cpe3243/cpe3243currencyconvertermaven/resources/JakartaEE10Resource.class
+tags/Tag01.class
+ejb/CurrencyConverterBean.class
+com/cpe3243/cpe3243currencyconvertermaven/JakartaRestConfiguration.class
