@@ -1,0 +1,23 @@
+function doGet(e) 
+{
+  	return HtmlService.createHtmlOutputFromFile("ชื่อไฟล์ html");
+}
+
+function getCode(code) 
+{
+  var url = "URL ของ google sheet";
+  var ss = SpreadsheetApp.openByUrl(url); 
+  var ws = ss.getSheetByName("ชื่อชีต"); 
+  var data = ws.getRange(1, 1, ws.getLastRow(), 5).getValues();
+  var stdCodesList = data.map (function(r) {  return r[0]; }); 
+  var stdList = data.map(function(r) { return r[3]; });
+  var position = stdCodesList.indexOf(code); 
+  if(position > -1)
+  {
+    return stdList[position]; 
+  } 
+  else 
+  {
+    return 'ไม่พบข้อมูลนักเรียน';
+  }
+}
