@@ -1,0 +1,37 @@
+DROP TABLE IF EXISTS `book`;
+
+CREATE TABLE `book` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `bookId5Digit` varchar(7) DEFAULT '00000',
+  `bookId6Digit` varchar(8) DEFAULT '000000',
+  `bookLanguage` varchar(4) DEFAULT '0',
+  `bookTitle` varchar(300) DEFAULT NULL,
+  `bookAuthor` varchar(200) DEFAULT NULL,
+  `bookPublisher` varchar(200) DEFAULT NULL,
+  `bookGroupNumber` varchar(30) DEFAULT NULL,
+  `bookISBN10Digit` varchar(15) DEFAULT '0000000000',
+  `bookISBN13Digit` varchar(20) DEFAULT '0000000000000',
+  `bookBarcode` varchar(20) DEFAULT NULL,
+  `bookMajor` varchar(10) DEFAULT NULL,
+  `bookStatus` varchar(5) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin;
+
+INSERT INTO `book` VALUES (1,'111111','111111','EN','JAVA','fdfdfdfd','fdfddfd','12345','1111111111','2222222222222','222222222222','COMPUTER','1');
+
+
+DROP TABLE IF EXISTS `engbook`;
+
+CREATE TABLE `engbook` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `bookId5Digit` varchar(7) DEFAULT NULL,
+  `bookId6Digit` varchar(8) DEFAULT NULL,
+  `bookTitle` varchar(200) DEFAULT NULL,
+  `bookAuthor` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin;
+
+
+
+INSERT INTO `engbook` VALUES (1,'22222','null','wwwwwwaaaaa','ssssssssss'),(5,'77777','777777','aaaaaaa','aaaaaaaaaaaa'),(6,'44444','444444','aaaaaa','aaaaa'),(7,'66666','666666','aaaaaaaaaaa','bbbbbbbbbbb'),(8,'88888','888888','uuuuuu','uuuuuuuu');
+

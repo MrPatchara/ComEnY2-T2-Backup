@@ -1,0 +1,4 @@
+ejb\BookSessionBeanLocal.class
+com\cpe3243\rulibexample\JakartaRestConfiguration.class
+ejb\BookSessionBean.class
+com\cpe3243\rulibexample\resources\JakartaEE10Resource.class
