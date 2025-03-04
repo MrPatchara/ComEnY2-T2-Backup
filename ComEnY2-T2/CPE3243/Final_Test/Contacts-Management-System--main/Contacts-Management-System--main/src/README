@@ -1,0 +1,38 @@
+ README
+
+
+# Contacts Management System
+
+## Overview
+The Contacts Management System is a Java-based application designed to facilitate the management of contacts information. It provides users with a graphical user interface (GUI) to interact with, allowing them to store, retrieve, and manage contact details such as code, name, date of birth, address, email, and telephone number.
+
+## Features
+- **Graphical User Interface (GUI):** The system offers a user-friendly GUI implemented using the Java Swing framework, providing an intuitive interface for managing contacts.
+- **Contact Information Storage:** Contacts data can be stored securely in a MySQL database, ensuring efficient retrieval and management of information.
+- **Dynamic Data Retrieval:** The system dynamically retrieves contact information from the database, allowing users to view and update contact details in real-time.
+- **Flexible and Customizable:** Users can customize and extend the functionality of the system according to their specific requirements, making it adaptable to various use cases.
+
+## Installation
+1. **Clone Repository:** Clone the repository to your local machine using the following command:
+   ```
+   git clone https://github.com/your-username/contacts-management-system.git
+   ```
+2. **Database Setup:** Set up a MySQL database and configure the connection details in the application code to enable data storage and retrieval.
+3. **Compile and Run:** Compile the Java source files and run the application to launch the Contacts Management System GUI.
+
+## Usage
+1. **Launch Application:** Run the compiled Java application to launch the Contacts Management System GUI.
+2. **View Contacts:** Upon launching the application, the GUI will display the list of existing contacts retrieved from the database.
+3. **Add New Contact:** Users can add new contacts by entering the required information in the designated fields and saving the changes.
+4. **Update Contact Information:** Existing contact details can be updated by selecting the contact from the list and editing the information as needed.
+5. **Delete Contact:** Users have the option to delete contacts from the system by selecting the contact and choosing the delete option.
+6. **Search Functionality:** The system provides a search functionality to quickly locate specific contacts based on criteria such as name, email, or telephone number.
+
+## Contributing
+Contributions to the Contacts Management System project are welcome! If you have any ideas for improvements or new features, feel free to open an issue or submit a pull request. Together, we can enhance the functionality and usability of the system for all users.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
